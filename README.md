@@ -5,8 +5,11 @@ I tested the whole pipeline in my personal laptop creating a VM in virtual box. 
 Suppose I want to to host more than 1000 pipelines, I will need a virtual machine with a larger configuration in terms of CPU, RAM, and storage. Here are some guidelines for the virtual machine configuration:
 
 ***Virtual Machine Size:*** Let's consider using a larger virtual machine size, such as Standard_D4s_v3 or Standard_D8s_v3, to handle a high number of pipelines.
+
 ***Number of CPU Cores:*** A minimum of 8 CPU cores is recommended for a virtual machine that will host more than 1000 pipelines.
+
 ***Amount of RAM:*** A minimum of 16 GB of RAM is recommended for a virtual machine that will host more than 1000 pipelines.
+
 ***Storage:*** A minimum of 200 GB of storage is recommended for a virtual machine that will host more than 1000 pipelines. You can consider using premium storage for the virtual machine to ensure better performance.
 
 **ARM Template description**
