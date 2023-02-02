@@ -10,10 +10,10 @@ Here I tried to provide three different approaches:
 
 **1) build and test a maven project from jenkins**
 
-Docker Job
+***Docker Job***
   Create a Dockerfile and docker compose file to build and run a containerised jenkins
 
-**Jenkins Job**
+***Jenkins Job***
 
   a) Install Maven plugin to Jenkins<br />
   b) Install the GIT plugin to Jenkins<br />
@@ -25,25 +25,27 @@ Docker Job
   h) archive last successful artifact<br />
   i) send email notification about the test result<br />
   
-**Git-Hook**
+***Git-Hook***
 
   a) create a script to generate crumb and use to auto run build once the new versioned code is pushed<br />
   b) use the script to auto-trigger jenkins job<br />
 
 **2) Build and test the project from Jenkins-DSL**
 
-**Jenkins Job**
+***Jenkins Job***
 
   a) install DSL pluging<br />
   b) create a seed job<br />
   c) Create Maven job inside seed job using DSL<br />
 
-**Git-Hook**
+***Git-Hook***
 
   a) create a script to generate crumb and use to auto run build once the new versioned code is pushed<br />
   b) use the script to auto-trigger jenkins job<br />
 
 **3) Build test and deploy project from pipeline script**
+
+***Jenkins Job***
 
   a) Create a script to build the jar file from pom.xml inside a docker container. This container will be inside jenkins container<br />
   b) Create a script to test the jar file inside docker container<br />
@@ -51,7 +53,7 @@ Docker Job
   d) Create a script to deploy the jar in remote server<br />
   c) put the build, test, push and deploy scripts inside Jenkinsfile<br />
   
-**Git-Hook**
+***Git-Hook***
 
   a) create a script to generate crumb and use to auto run build once the new versioned code is pushed<br />
   b) use the script to auto-trigger jenkins job<br />
