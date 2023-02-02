@@ -13,40 +13,45 @@ Here I tried to provide three different approaches:
 Docker Job
   Create a Dockerfile and docker compose file to build and run a containerised jenkins
 
-Jenkins Job
+**Jenkins Job**
+
   a) Install Maven plugin to Jenkins<br />
-  b) Install the GIT plugin to Jenkins
-  c) Clone Git repository 
-  d) Build jar using Maven from pom.xml
-  e) test code
-  f) deploy in local jenkins server
-  g) display result using graph
-  h) archive last successful artifact
-  i) send email notification about the test result
+  b) Install the GIT plugin to Jenkins<br />
+  c) Clone Git repository <br />
+  d) Build jar using Maven from pom.xml<br />
+  e) test code<br />
+  f) deploy in local jenkins server<br />
+  g) display result using graph<br />
+  h) archive last successful artifact<br />
+  i) send email notification about the test result<br />
   
 **Git-Hook**
-  a) create a script to generate crumb and use to auto run build once the new versioned code is pushed
-  b) use the script to auto-trigger jenkins job
+
+  a) create a script to generate crumb and use to auto run build once the new versioned code is pushed<br />
+  b) use the script to auto-trigger jenkins job<br />
 
 **2) Build and test the project from Jenkins-DSL**
 
 **Jenkins Job**
-  a) install DSL pluging
-  b) create a seed job
-  c) Create Maven job inside seed job using DSL
+
+  a) install DSL pluging<br />
+  b) create a seed job<br />
+  c) Create Maven job inside seed job using DSL<br />
 
 **Git-Hook**
-  a) create a script to generate crumb and use to auto run build once the new versioned code is pushed
-  b) use the script to auto-trigger jenkins job
+
+  a) create a script to generate crumb and use to auto run build once the new versioned code is pushed<br />
+  b) use the script to auto-trigger jenkins job<br />
 
 **3) Build test and deploy project from pipeline script**
 
-  a) Create a script to build the jar file from pom.xml inside a docker container. This container will be inside jenkins container
-  b) Create a script to test the jar file inside docker container 
-  c) Create a script to push the image to docker hub and and pull it in remote server
-  d) Create a script to deploy the jar in remote server
-  c) put the build, test, push and deploy scripts inside Jenkinsfile
+  a) Create a script to build the jar file from pom.xml inside a docker container. This container will be inside jenkins container<br />
+  b) Create a script to test the jar file inside docker container<br />
+  c) Create a script to push the image to docker hub and and pull it in remote server<br />
+  d) Create a script to deploy the jar in remote server<br />
+  c) put the build, test, push and deploy scripts inside Jenkinsfile<br />
   
 **Git-Hook**
-  a) create a script to generate crumb and use to auto run build once the new versioned code is pushed
-  b) use the script to auto-trigger jenkins job
+
+  a) create a script to generate crumb and use to auto run build once the new versioned code is pushed<br />
+  b) use the script to auto-trigger jenkins job<br />
