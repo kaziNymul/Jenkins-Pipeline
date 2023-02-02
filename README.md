@@ -1,3 +1,19 @@
+**ARM Template for Jenkins**
+
+This ARM template creates a Jenkins CI/CD pipeline in Azure. It provisions all the necessary resources for the pipeline, including a virtual machine for running Jenkins, a virtual network for connecting the virtual machine to the internet, and a storage account for storing the Jenkins data.
+
+The template starts with the "$schema" and "contentVersion" properties, which define the version of the ARM template language and the version of the content in the template.
+
+Next, the template includes "parameters" section where the user-defined values for different resources can be specified. For example, the name of the Jenkins virtual machine, the username and password for the virtual machine, the size of the virtual machine, and the name of the storage account.
+
+The "variables" section includes hardcoded values for some of the resources in the template. In this case, it defines the names of the virtual network, subnet, public IP address, and network security group.
+
+The "resources" section is where the actual resources are defined. The resources include a virtual network, a network security group, and a virtual machine.
+
+The virtual network is defined with "Microsoft.Network/virtualNetworks" type, and it includes properties such as the address space and subnets. The network security group is defined with "Microsoft.Network/networkSecurityGroups" type, and it includes properties such as the security rules for allowing SSH access.
+
+The virtual machine is defined with "Microsoft.Compute/virtualMachines" type, and it includes properties such as the name of the virtual machine, the size of the virtual machine, the username and password, and the storage account name. The template also provisions a public IP address for the virtual machine, so that it can be accessed from the internet.
+
 Here I tried to provide three different approaches:
 
 **Build and test the project from Jenkins UI:** 
