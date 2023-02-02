@@ -14,7 +14,7 @@ The virtual network is defined with "Microsoft.Network/virtualNetworks" type, an
 
 The virtual machine is defined with "Microsoft.Compute/virtualMachines" type, and it includes properties such as the name of the virtual machine, the size of the virtual machine, the username and password, and the storage account name. The template also provisions a public IP address for the virtual machine, so that it can be accessed from the internet.
 
-Here I tried to provide three different approaches:
+Here I tried to provide three different approaches for jenkins deployment:
 
 **Build and test the project from Jenkins UI:** 
 
