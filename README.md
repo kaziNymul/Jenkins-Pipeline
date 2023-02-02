@@ -11,10 +11,10 @@ Here I tried to provide three different approaches:
 **1) build and test a maven project from jenkins**
 
 Docker Job
-  a) Create a Dockerfile and docker compose file to build and run a containerised jenkins
+  Create a Dockerfile and docker compose file to build and run a containerised jenkins
 
 Jenkins Job
-  a) Install Maven plugin to Jenkins
+  a) Install Maven plugin to Jenkins\n
   b) Install the GIT plugin to Jenkins
   c) Clone Git repository 
   d) Build jar using Maven from pom.xml
