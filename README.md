@@ -1,5 +1,16 @@
 **ARM Template for Jenkins**
 
+I tested the whole pipeline in my personal laptop creating a VM in virtual box. However I created a sample ARM template and shared it here.
+
+Suppose I want to to host more than 1000 pipelines, I will need a virtual machine with a larger configuration in terms of CPU, RAM, and storage. Here are some guidelines for the virtual machine configuration:
+
+***Virtual Machine Size:*** Let's consider using a larger virtual machine size, such as Standard_D4s_v3 or Standard_D8s_v3, to handle a high number of pipelines.
+***Number of CPU Cores:*** A minimum of 8 CPU cores is recommended for a virtual machine that will host more than 1000 pipelines.
+***Amount of RAM:*** A minimum of 16 GB of RAM is recommended for a virtual machine that will host more than 1000 pipelines.
+***Storage:*** A minimum of 200 GB of storage is recommended for a virtual machine that will host more than 1000 pipelines. You can consider using premium storage for the virtual machine to ensure better performance.
+
+**ARM Template description**
+
 This ARM template creates a Jenkins CI/CD pipeline in Azure. It provisions all the necessary resources for the pipeline, including a virtual machine for running Jenkins, a virtual network for connecting the virtual machine to the internet, and a storage account for storing the Jenkins data.
 
 The template starts with the "$schema" and "contentVersion" properties, which define the version of the ARM template language and the version of the content in the template.
