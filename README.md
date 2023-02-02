@@ -1,12 +1,21 @@
 Here I tried to provide three different approaches:
 
-**Build and test the project from Jenkins UI:** This method involved using the user interface of Jenkins to build and test the Maven project. I configured the build process by specifying the Maven version, goals, and options, and then trigger the build by clicking on the "Build Now" button. After the build is complete, I could view the results and test reports in the Jenkins console.
+**Build and test the project from Jenkins UI:** 
 
-**Build and test from Jenkins DSL:** This method involved writing the build and test steps in the Jenkins Domain-Specific Language (DSL). By using the Jenkins DSL, I automated the build and test process, making it easier to manage and maintain.
+This method involved using the user interface of Jenkins to build and test the Maven project. I configured the build process by specifying the Maven version, goals, and options, and then trigger the build by clicking on the "Build Now" button. After the build is complete, I could view the results and test reports in the Jenkins console.
 
-**Build, test, and deploy from Jenkins pipeline:** This method involved using a Jenkins pipeline to automate the entire software delivery process, from building and testing to deploying the project to a production environment. By using a pipeline(Jenkinsfile) script, I ensured the the build, test, and deployment process is repeatable and consistent.
+**Build and test from Jenkins DSL:** 
 
-**Git-Hooks:** In this context of building and testing a Maven project from Jenkins, Git Hooks was used to automatically trigger a Jenkins job whenever code changes are pushed to the Git repository. This helps to ensure that the build and test process is triggered automatically whenever new code is committed, saving time and reducing the risk of manual errors.
+This method involved writing the build and test steps in the Jenkins Domain-Specific Language (DSL). By using the Jenkins DSL, I automated the build and test process, making it easier to manage and maintain.
+
+**Build, test, and deploy from Jenkins pipeline:** 
+
+This method involved using a Jenkins pipeline to automate the entire software delivery process, from building and testing to deploying the project to a production environment. By using a pipeline(Jenkinsfile) script, I ensured the the build, test, and deployment process is repeatable and consistent.
+
+**Git-Hooks:** 
+
+In this context of building and testing a Maven project from Jenkins, Git Hooks was used to automatically trigger a Jenkins job whenever code changes are pushed to the Git repository. This helps to ensure that the build and test process is triggered automatically whenever new code is committed, saving time and reducing the risk of manual errors.
+
 
 **1) build and test a maven project from jenkins**
 
